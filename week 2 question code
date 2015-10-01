@@ -1,0 +1,29 @@
+name = input("Hello what is your name?")
+
+print("Thank you")
+
+age = int(input("And how old are you?"))
+
+print("Thank you",name,"next year you will be",(age + 1))
+
+#next question
+
+area = float(12.5678)
+radius = int(2)
+
+print("The radius",radius,"and the area is",round(area,2))
+
+#next question
+
+from math import sqrt
+X = 2
+Y = 4
+print("The product of",x, "and",Y, "is",X + Y)
+print("The root of their difference is")
+
+#next question
+
+p = 17
+q = 18
+
+print((p + q) / 2.0)
