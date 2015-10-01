@@ -1,0 +1,15 @@
+numberone = 0
+numbertwo = 0
+result = 0
+
+numberone = input("Please enter a number:")
+print("Thank you")
+numbertwo = input("Please enter a second number:")
+print("Thank you")
+
+numberone = int(numberone)
+numbertwo = int(numbertwo)
+
+result = numberone+numbertwo
+
+print("The result of the addition of number one and number two is:",result)
