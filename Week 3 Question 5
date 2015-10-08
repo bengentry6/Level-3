@@ -1,0 +1,15 @@
+password = ""
+count = int(0)
+
+while password != "changeme":
+    password = input("Please enter a password")
+    if password != "changeme":
+        print("Sorry that is not correct")
+        count += 1
+        if count >= 5:
+            print("Access Denied, Please contact security")
+            break
+    elif password == "changeme":
+        print("Accepted")
+        print("It took",count,"attempts")
+        break
