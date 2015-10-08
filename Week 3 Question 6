@@ -1,0 +1,20 @@
+magnitude = input("Please enter a magnitude:")
+
+while magnitude > "4.5":
+    if magnitude >= "8":
+        print("Most buildings destroyed")
+        break
+
+    elif magnitude >= "7":
+        print("Some buildings destroyed")
+        break
+
+    elif magnitude >= "6":
+        print("Many buildings damaged")
+        break
+
+    elif magnitude >= "4.5":
+        print("Damage to poorly constructed buildings only")
+        break
+
+print("No destruction to buildings")
