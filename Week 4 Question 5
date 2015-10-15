@@ -1,0 +1,53 @@
+sentanceone = str(input("Please enter the first sentance: "))
+sentancetwo = str(input("Please enter the sencond sentance: "))
+
+#split sentances
+wordlistone = sentanceone.split(" ")
+wordlisttwo = sentancetwo.split(" ")
+
+#concatenate the two sentances
+sentancetogether = wordlistone + wordlisttwo
+print("The two sentances together are:",sentancetogether)
+
+#split the sentance into list of words
+for word in wordlistone:
+    print(word, end="\n")
+for word in wordlisttwo:
+    print(word, end="\n")
+    
+#sort the words into alphabetical order
+print("In alphabetical order: ",sorted(sentancetogether))
+
+#total number of words in list
+print("Number of words in list: ", len(sentancetogether))
+
+#Dictionary to store each word and how many times it occurs
+dictionary = {}
+
+for item in wordlistone:
+
+    checkfor = item
+    counter = 0
+
+    for item in wordlistone:
+
+        if checkfor in wordlistone:
+            wordlistone.remove(checkfor)
+            counter = counter +1
+
+    dictionary[checkfor]=counter
+
+for item in wordlisttwo:
+
+    checkfor = item
+    counter = 0
+
+    for item in wordlisttwo:
+
+        if checkfor in wordlistone:
+            wordlisttwo.remove(checkfor)
+            counter = counter +1
+
+    dictionary[checkfor]=counter
+    
+print("Dictionary is: \n", dictionary)
