@@ -1,0 +1,8 @@
+shopping = []
+guardian = "x"
+while guardian != "":
+    guardian = input("Please enter an item to add to shopping list: ")
+    if guardian != "":
+        shopping.append(guardian)
+
+print(shopping)
