@@ -1,0 +1,12 @@
+def count_spaces():
+    spaces = 0
+    for char in userinput:
+        if char == " ":
+            spaces += 1
+    return spaces
+
+def main():
+    userinput = input(print("Please enter a phrase:"))
+    print("There are",count_spaces,"spaces in your phrase")
+
+main()
