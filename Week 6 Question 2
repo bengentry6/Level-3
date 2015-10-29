@@ -1,0 +1,7 @@
+class person():
+    def __init__ (self, myName):
+        self._name = myName
+
+p = person("unknown")
+
+print(p)
