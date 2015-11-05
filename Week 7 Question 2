@@ -1,0 +1,39 @@
+class CashRegister():
+
+    def __init__ (self):
+        self._itemcount = 0
+        self._totalprice = 0.0
+
+    def addItem (self, price):
+        self._itemcount = self._itemcount + 1
+        self._totalprice = self._totalprice + price
+
+    def getTotal(self):
+        return self._totalprice
+
+    def getCount(self):
+        return self._itemcount
+
+    def clear(self):
+        self._itemcount = 0
+        self._totalprice = 0.0
+
+    def showstock(self):
+        print("Count is: ", getCount)
+        print("Total Price is: ", getTotal)
+
+
+from cashregister import *
+
+c = CashRegister()
+
+c.addItem(34)
+c.showstock()
+
+c.getTotal()
+c.showstock()
+
+c.getCount()
+c.showstock()
+
+
