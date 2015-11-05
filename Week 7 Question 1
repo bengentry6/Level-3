@@ -1,0 +1,35 @@
+class Student():
+    def __init__ (self, firstname = "", lastname = "", studentno = 0, course = ""):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.studentno = studentno
+        self.course = course
+
+    def showDetails (self):
+        print("First Name: ", self.firstname)
+        print("Last Name: ", self.lastname)
+        print("Student Number: ", self.studentno)
+        print("Course: ", self.course)
+
+
+from student import *
+
+for i in range(1,5):
+    name = input("Enter Name: ")
+    surname = input("Enter Surname: ")
+    studentno = int(input("Enter Student ID: ")
+    course = input("Enter Course: ")
+    i = Student(name, surname, studentno, course)
+    i.showDetails()
+
+
+from student import *
+
+s0 = Student()
+s1 = Student("Ben", "Gentry", 21281337, "ASE")
+s2 = Student("Jim", "Cricket", 37482910, "EEE")
+
+students = [s0, s1, s2]
+for p in students:
+    print()
+    p.showDetails()
