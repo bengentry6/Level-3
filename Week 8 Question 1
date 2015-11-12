@@ -1,0 +1,32 @@
+class book():
+    def __init__ (self, title, author, year):
+        self.title = title
+        self.author = author
+        self.year = year
+
+    def showDetails(self):
+        print("The title of the book is: ", self.title)
+        print("The author's name is: ", self.author)
+        print("The year of publication: ", self.year)
+
+from book import *
+
+def main():
+    b1 = book("Wonders of the universe", "Stephen Hawking", 1990)
+    b2 = book("When you dead, You dead", "Guy Martin", 2015)
+    b3 = book("Call the midlife", "Chris Evans", 2015)
+
+    b1.showDetails()
+    b2.showDetails()
+    b3.showDetails()
+
+    b1.year = 1994
+    print("The new year of publication of", b1.title, "is", b1.year)
+
+    b2.author = "Tim Matthews"
+    print("The new author of", b2.title, "is", b2.author)
+
+    b3.title = "Shout it out"
+    print("The new title of the book by", b3.author, "is", b3.title)
+    
+main()
