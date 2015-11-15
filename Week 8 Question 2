@@ -9,20 +9,30 @@ class car():
         yes = ["yes", "yeah", "sure", "yep"]
         no = ["no", "nah", "nope", "not"]
         
-        answer = input("Is the car driving?")
+        answer = input("Is the car driving?"
         
         if answer in yes:
-            True
-        elif answer in no:
-            False
+            return
+        elif answer in no:
+            return
         else:
             print("That's not an accepted answer")
 
-    def showDetails():
+    def showDetails(self):
         print("Car manufacturer is: ", self.brand)
         print("Car model is: ", self.model)
         print("Cars maximum speed is: ", self.maxspeed)
         print("Cars mileage is: ", self.mileage)
+        
+        if car.driving == True:
+            print("The car is driving.")
+            
+        elif car.driving == False:
+            print("The car is not driving.")
+        
+        else:
+            print("You did not enter an accepted answer."
+        
 
 def main():
     c0 = car()
