@@ -1,4 +1,12 @@
 class car():
+    def __int__ (self, manufacturer="", model="", speed="", mileage="", driving = ""):
+        self.brand = manufacturer
+        self.model = model
+        self.maxspeed = speed
+        self.mileage = mileage
+
+    def driving():
+class car():
     def __int__ (self, manufacturer="", model="", speed="", mileage=""):
         self.brand = manufacturer
         self.model = model
@@ -19,6 +27,28 @@ def main():
     c1 = car("Ford", "Focus", "150", "13400")
     c2 = car("Peugeot", "206", "100", "100300")
     c3 = car("Peugeot", "106", "90", "111000")
+
+    c1.showDetails()
+    c2.showDetails()
+    c3.showDetails()
+
+main()
+
+
+    def showDetails():
+        print("Car manufacturer is: ", self.brand)
+        print("Car model is: ", self.model)
+        print("Cars maximum speed is: ", self.maxspeed)
+        print("Cars mileage is: ", self.mileage)
+
+
+from Car import *
+
+def main():
+    c0 = car()
+    c1 = car("Ford", "Focus", "150", "13400", )
+    c2 = car("Peugeot", "206", "100", "100300", input("Is the car driving"))
+    c3 = car("Peugeot", "106", "90", "111000", input("Is the car driving?"))
 
     c1.showDetails()
     c2.showDetails()
