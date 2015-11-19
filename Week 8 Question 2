@@ -12,9 +12,9 @@ class car():
         answer = input("Is the car driving?"
         
         if answer in yes:
-            return
+            return True
         elif answer in no:
-            return
+            return False
         else:
             print("That's not an accepted answer")
 
@@ -48,3 +48,4 @@ def main():
     c3.showDetails()
 
 main()
+
