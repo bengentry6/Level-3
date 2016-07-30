@@ -11,9 +11,9 @@ class car():
         
         answer = input("Is the car driving?"
         
-        if answer in (yes):
+        if answer in [yes]:
             return True
-        elif answer in (no):
+        elif answer in [no]:
             return False
         else:
             print("That's not an accepted answer")
